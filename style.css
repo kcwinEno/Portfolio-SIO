@@ -1,0 +1,261 @@
+/* --- Variables & Reset --- */
+:root {
+    --primary: #2563eb;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --text: #334155;
+    --accent: #dbeafe;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+    font-family: 'Segoe UI', sans-serif; 
+    line-height: 1.6; 
+    color: var(--text); 
+    scroll-behavior: smooth; 
+}
+
+/* --- Layout --- */
+.container { padding: 100px 10% 80px; }
+.bg-light { background: var(--light); padding: 80px 10%; }
+h2 { 
+    font-size: 2.5rem; 
+    margin-bottom: 30px; 
+    border-left: 5px solid var(--primary); 
+    padding-left: 15px; 
+    color: var(--dark); 
+}
+
+/* --- Barre de Navigation --- */
+.navbar {
+    position: fixed; top: 0; width: 100%; display: flex;
+    justify-content: space-between; align-items: center;
+    padding: 1rem 5%; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000;
+}
+.logo { font-weight: bold; font-size: 1.2rem; }
+.logo span { color: var(--primary); }
+.nav-links { display: flex; list-style: none; }
+.nav-links li a { text-decoration: none; margin-left: 20px; color: var(--dark); font-weight: 500; transition: 0.3s; }
+.nav-links li a:hover { color: var(--primary); }
+
+/* --- Section Hero --- */
+.hero {
+    height: 100vh; 
+    background: linear-gradient(rgba(30, 41, 59, 0.85), rgba(30, 41, 59, 0.85)), 
+                url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center; text-align: center; color: white;
+}
+.hero h1 span { color: var(--primary); }
+.btn { 
+    display: inline-block; margin-top: 20px; padding: 12px 30px; 
+    background: var(--primary); color: white; text-decoration: none; 
+    border-radius: 5px; font-weight: bold; transition: 0.3s; 
+}
+.btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+
+/* --- Compétences --- */
+.skills { list-style: none; display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+.skills li { 
+    background: var(--accent); color: var(--primary); 
+    padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.9rem; 
+}
+
+/* --- Grille de Cartes --- */
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 25px; margin-top: 30px; 
+}
+
+.card, .project-card { 
+    background: white; border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+    overflow: hidden; border-top: 4px solid var(--primary);
+    transition: 0.3s;
+}
+.card { padding: 25px; }
+.card:hover, .project-card:hover { transform: translateY(-5px); }
+
+/* --- Détails Projets --- */
+.project-image { width: 100%; height: 180px; background: #eee; overflow: hidden; }
+.project-image img { width: 100%; height: 100%; object-fit: cover; }
+.project-info { padding: 20px; }
+.year-title { color: var(--primary); margin-top: 40px; font-size: 1.4rem; }
+.tech-stack { font-weight: bold; color: #64748b; font-size: 0.85rem; margin: 10px 0; }
+
+.btn-download {
+    display: inline-block; margin: 10px 0; padding: 8px 15px;
+    background: white; color: var(--primary); border: 1px solid var(--primary);
+    text-decoration: none; border-radius: 5px; font-size: 0.9rem; transition: 0.3s;
+}
+.btn-download:hover { background: var(--primary); color: white; }
+
+.badge { 
+    display: block; font-size: 0.75rem; background: var(--light); 
+    padding: 4px 10px; border-radius: 4px; color: var(--text); border: 1px solid #e2e8f0;
+}
+
+/* --- Footer --- */
+footer { text-align: center; padding: 40px; background: var(--dark); color: white; }
+
+/* Style spécifique pour la section Veille */
+.veille-content {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.veille-header h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.veille-header span {
+    color: var(--primary);
+}
+
+.veille-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.veille-item h4 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Responsive pour la veille sur mobile */
+@media (max-width: 768px) {
+    .veille-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Mise en page À Propos --- */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.intro {
+    font-size: 1.25rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* --- Bloc CV --- */
+.cv-block {
+    text-align: center;
+}
+
+.cv-preview {
+    position: relative;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    aspect-ratio: 1 / 1.414; /* Format A4 */
+    background: #f1f5f9;
+}
+
+.cv-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.cv-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(37, 99, 235, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.cv-preview:hover .cv-overlay {
+    opacity: 1;
+}
+
+.cv-preview:hover img {
+    transform: scale(1.1);
+}
+
+.btn-download-cv {
+    display: block;
+    padding: 12px;
+    background: var(--dark);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-download-cv:hover {
+    background: var(--primary);
+}
+
+/* --- Responsive Mobile --- */
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cv-block {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* Style pour l'organisation interne des cartes de stage */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.stage-links {
+    margin-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 15px;
+}
+
+/* On réutilise la classe btn-download déjà créée pour les projets pour garder la cohérence */
+.btn-download {
+    display: inline-block;
+    padding: 8px 15px;
+    background: white;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-download:hover {
+    background: var(--primary);
+    color: white;
+}
