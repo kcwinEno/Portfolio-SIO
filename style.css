@@ -376,3 +376,44 @@ footer {
     color: var(--dark);
     margin-right: 5px;
 }
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.resource-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--accent);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: 0.3s ease;
+}
+
+.resource-item:hover {
+    transform: translateX(5px);
+    border-color: var(--primary);
+}
+
+.resource-item a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.res-tag {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary);
+    background: var(--accent);
+    padding: 2px 8px;
+    border-radius: 4px;
+    width: fit-content;
+}
