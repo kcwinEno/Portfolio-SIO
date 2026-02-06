@@ -1,7 +1,7 @@
 /* --- Variables & Reset --- */
 :root {
     --primary: #2563eb;
-    --dark: #1e293b;
+    --dark: #0f172a;
     --light: #f8fafc;
     --text: #334155;
     --accent: #dbeafe;
@@ -98,7 +98,41 @@ h2 {
 }
 
 /* --- Footer --- */
-footer { text-align: center; padding: 40px; background: var(--dark); color: white; }
+footer {
+    background: #0b0f1a; /* Couleur forcée pour éviter les erreurs de variables */
+    color: #ffffff;
+    padding: 60px 10% 20px;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* Blanc pur pour le titre */
+}
+
+.footer-content p {
+    color: #cbd5e1; /* Gris très clair pour être lisible sur fond sombre */
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid #334155; /* Bordure discrète */
+    border-radius: 5px;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.05); /* Léger fond pour détacher du noir */
+}
+
+.contact-item:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+}
 
 /* Style spécifique pour la section Veille */
 .veille-content {
