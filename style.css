@@ -117,21 +117,23 @@ footer {
 }
 
 .contact-item {
-    color: #ffffff;
-    text-decoration: none;
+    text-decoration: none; /* Supprime le soulignement bleu */
+    display: inline-block;
+    color: white;
     font-weight: 500;
     padding: 10px 20px;
-    border: 1px solid #334155; /* Bordure discrète */
+    border: 1px solid #334155;
     border-radius: 5px;
     transition: 0.3s;
-    background: rgba(255, 255, 255, 0.05); /* Léger fond pour détacher du noir */
+    background: rgba(255, 255, 255, 0.05);
+    margin: 5px; /* Ajoute un petit espace entre les boutons */
 }
 
 .contact-item:hover {
     background: var(--primary);
     border-color: var(--primary);
     color: white;
-    transform: translateY(-3px);
+    text-decoration: none; /* Sécurité supplémentaire au survol */
 }
 
 /* Style spécifique pour la section Veille */
@@ -294,26 +296,53 @@ footer {
     color: white;
 }
 
-/* Style pour les dates de formations */
+/* --- Optimisation de la section Parcours --- */
+
+.about-text h3 {
+    margin-top: 45px; /* On aère bien après les badges */
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    color: var(--dark);
+    border-bottom: 2px solid var(--accent); /* Petite ligne de séparation discrète */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 3px solid var(--primary); /* Ligne plus marquée pour le côté "Timeline" */
+    transition: 0.3s;
+}
+
+.timeline-item:hover {
+    border-left-color: var(--dark); /* Petit effet interactif au survol */
+}
+
+.timeline-item p strong {
+    font-size: 1.15rem; /* On grossit le nom du diplôme */
+    color: var(--dark);
+    display: block;
+    margin-top: 5px;
+}
+
+.timeline-item p:last-child {
+    font-size: 0.95rem;
+    color: #64748b; /* Gris pro pour l'adresse du lycée */
+    margin-top: 5px;
+}
+
+/* Style des dates (la classe .formations) */
 .formations {
     display: inline-block;
     background-color: var(--primary);
     color: white;
-    padding: 2px 10px;
+    padding: 4px 12px;
     border-radius: 4px;
-    font-weight: bold;
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-}
-
-.timeline-item {
-    margin-bottom: 20px;
-    padding-left: 15px;
-    border-left: 2px solid var(--accent);
-}
-
-.timeline-item p {
-    margin-bottom: 2px !important;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
 }
 
 /* Style pour la section Langues */
