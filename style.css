@@ -115,6 +115,9 @@ footer {
     color: #cbd5e1; /* Gris très clair pour être lisible sur fond sombre */
     margin-bottom: 30px;
 }
+.contact-links a {
+    text-decoration: none !important; /* Force la suppression du trait bleu */
+}
 
 .contact-item {
     text-decoration: none; /* Supprime le soulignement bleu */
