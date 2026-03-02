@@ -10,4 +10,22 @@ window.addEventListener('scroll', () => {
     });
 });
 
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+    document.body.style.overflow = "hidden"; // Bloque le scroll
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+    document.body.style.overflow = "auto"; // Réactive le scroll
+}
+
+// Fermer si on clique à côté de la fenêtre
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+}
+
 console.log("Portfolio chargé avec succès - Candidat BTS SIO prêt !");
