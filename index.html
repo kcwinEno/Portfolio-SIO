@@ -125,6 +125,7 @@
                         <a href="documents/Compte rendu - 1ère année.pdf" target="_blank" class="btn-download">
                             📄 Rapport de stage
                         </a>
+                        <button class="btn-details" onclick="openModal('modalStage2')">🔍 Détails</button>
                     </div>
                 </div>
     
@@ -142,6 +143,7 @@
                         <a href="documents/Compte rendu - 2ème année.pdf" target="_blank" class="btn-download">
                             📄 Rapport de stage
                         </a>
+                        <button class="btn-details" onclick="openModal('modalStage2')">🔍 Détails</button>
                     </div>
                 </div>
             </div>
@@ -345,6 +347,120 @@
             </div>
         </div> -->
     </section>
+
+    <div id="modalStage1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalStage1')">&times;</span>
+            <h2>Entreprise : Berthoud Cycles</h2>
+            <div class="modal-grid">
+                <div class="modal-text">
+                    <h3>L'entreprise</h3>
+                    <p>Berthoud Cycles est une manufacture de cycles haut de gamme. Mon rôle était d'optimiser leur flux de vente en ligne.</p>
+                    <h3>Analyse réflexive</h3>
+                    <p><strong>Réalisations :</strong> Automatisation du traitement des commandes PrestaShop via un module personnalisé.</p>
+                    <p><strong>Bilan :</strong> J'ai appris à manipuler les hooks PrestaShop. Avec plus de temps, j'aurais implémenté des tests unitaires sur le calcul des frais d'expédition.</p>
+                </div>
+                <div class="modal-gallery">
+                    <img src="images/screen-stage1-1.png" alt="Capture Stage 1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalStage2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalStage1')">&times;</span>
+            <h2>Entreprise : Ether Création</h2>
+            <div class="modal-grid">
+                <div class="modal-text">
+                    <h3>L'entreprise</h3>
+                    <p>Ether Création est une société de développement informatique spécialisée sur PrestaShop et la création de modules</p>
+                    <h3>Analyse réflexive</h3>
+                    <p><strong>Réalisations :</strong> Développement d'un connecteur (module) liant une API distante à un site de e-commerce sur PrestaShop.</p>
+                    <p><strong>Bilan :</strong> J'ai appris à manipuler les hooks PrestaShop et à manipuler les flux de données. Avec plus de temps, j'aurais implémenté la réception et l'envoie de bon de commandes.</p>
+                </div>
+                <div class="modal-gallery">
+                    <img src="images/screen-stage1-1.png" alt="Capture Stage 1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalLigue1C#" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalAdaPHP')">&times;</span>
+            <h2>Analyse : Application Ligue1 </h2>
+            <div class="modal-grid">
+                <div class="modal-text">
+                    <h3>Objectif</h3>
+                    <p>Développer un portail de réservation client robuste et sécurisé.</p>
+                    <h3>Analyse Technique</h3>
+                    <p>L'utilisation de Laravel a permis une gestion simplifiée du routage et de l'authentification. J'ai mis en place des Eloquent Relationships pour lier les agences aux véhicules disponibles.</p>
+                    <p><strong>Amélioration possible :</strong> Mise en cache des résultats de recherche pour optimiser les performances lors des pics de consultation.</p>
+                </div>
+                <div class="modal-gallery">
+                    <img src="images/screen-ada-php.png" alt="Capture Site Ada">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalLigue1PHP" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalAdaPHP')">&times;</span>
+            <h2>Analyse : Site Web Ligue1 </h2>
+            <div class="modal-grid">
+                <div class="modal-text">
+                    <h3>Objectif</h3>
+                    <p>Développer un portail de réservation client robuste et sécurisé.</p>
+                    <h3>Analyse Technique</h3>
+                    <p>L'utilisation de Laravel a permis une gestion simplifiée du routage et de l'authentification. J'ai mis en place des Eloquent Relationships pour lier les agences aux véhicules disponibles.</p>
+                    <p><strong>Amélioration possible :</strong> Mise en cache des résultats de recherche pour optimiser les performances lors des pics de consultation.</p>
+                </div>
+                <div class="modal-gallery">
+                    <img src="images/screen-ada-php.png" alt="Capture Site Ada">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalAdaC#" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalAdaPHP')">&times;</span>
+            <h2>Analyse : Application Ada (Entity)</h2>
+            <div class="modal-grid">
+                <div class="modal-text">
+                    <h3>Objectif</h3>
+                    <p>Développer un portail de réservation client robuste et sécurisé.</p>
+                    <h3>Analyse Technique</h3>
+                    <p>L'utilisation de Laravel a permis une gestion simplifiée du routage et de l'authentification. J'ai mis en place des Eloquent Relationships pour lier les agences aux véhicules disponibles.</p>
+                    <p><strong>Amélioration possible :</strong> Mise en cache des résultats de recherche pour optimiser les performances lors des pics de consultation.</p>
+                </div>
+                <div class="modal-gallery">
+                    <img src="images/screen-ada-php.png" alt="Capture Site Ada">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalAdaPHP" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalAdaPHP')">&times;</span>
+            <h2>Analyse : Site Web Ada (Laravel)</h2>
+            <div class="modal-grid">
+                <div class="modal-text">
+                    <h3>Objectif</h3>
+                    <p>Développer un portail de réservation client robuste et sécurisé.</p>
+                    <h3>Analyse Technique</h3>
+                    <p>L'utilisation de Laravel a permis une gestion simplifiée du routage et de l'authentification. J'ai mis en place des Eloquent Relationships pour lier les agences aux véhicules disponibles.</p>
+                    <p><strong>Amélioration possible :</strong> Mise en cache des résultats de recherche pour optimiser les performances lors des pics de consultation.</p>
+                </div>
+                <div class="modal-gallery">
+                    <img src="images/screen-ada-php.png" alt="Capture Site Ada">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer id="contact">
         <div class="footer-content">
