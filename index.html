@@ -125,7 +125,7 @@
                         <a href="documents/Compte rendu - 1ère année.pdf" target="_blank" class="btn-download">
                             📄 Rapport de stage
                         </a>
-                        <button class="btn-details" onclick="openModal('modalStage2')">🔍 Détails</button>
+                        <button class="btn-details" onclick="openModal('modalStage1')">🔍 Détails</button>
                     </div>
                 </div>
     
@@ -393,14 +393,20 @@
     <div id="modalLigue1C#" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modalLigue1C#')">&times;</span>
-            <h2>Analyse : Application Ligue1 </h2>
+            <h2>Analyse : Application Bureau Ligue1 (C#) </h2>
             <div class="modal-grid">
                 <div class="modal-text">
                     <h3>Objectif</h3>
-                    <p>Développer un portail de réservation client robuste et sécurisé.</p>
+                    <p>Développer un logiciel de bureau permettant à un administrateur de gérer le calendrier, de saisir les scores des matchs et de générer automatiquement le classement du championnat.</p>
                     <h3>Analyse Technique</h3>
-                    <p>L'utilisation de Laravel a permis une gestion simplifiée du routage et de l'authentification. J'ai mis en place des Eloquent Relationships pour lier les agences aux véhicules disponibles.</p>
-                    <p><strong>Amélioration possible :</strong> Mise en cache des résultats de recherche pour optimiser les performances lors des pics de consultation.</p>
+                    <p>
+                        Ce projet m'a permis de mettre en pratique les concepts de la <strong>Programmation Orientée Objet (POO)</strong> en C#
+                    </p>
+                    <p>
+                        L'interface utilisateur a été conçue pour être intuitive, avec une gestion d'événements permettant de mettre à jour le classement en temps réel dès la validation d'un score. Les données sont persistées via une base de données locale SQL Server.
+                    </p>
+                    
+                    <p><strong>Amélioration possible :</strong> Intégrer un système d'import/export de données au format JSON ou XML pour faciliter les échanges avec d'autres systèmes ou le site web PHP.</p>
                 </div>
                 <div class="modal-gallery">
                     <img src="images/screen-ada-php.png" alt="Capture Site Ada">
@@ -412,14 +418,21 @@
     <div id="modalLigue1PHP" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modalLigue1PHP')">&times;</span>
-            <h2>Analyse : Site Web Ligue1 </h2>
+            <h2>Analyse : Site Web Ligue1 (PHP) </h2>
             <div class="modal-grid">
                 <div class="modal-text">
                     <h3>Objectif</h3>
-                    <p>Développer un portail de réservation client robuste et sécurisé.</p>
+                    <p>Développer une plateforme web dynamique permettant aux utilisateurs de consulter les résultats, les classements et les statistiques du championnat en temps réel.</p>
+                    
                     <h3>Analyse Technique</h3>
-                    <p>L'utilisation de Laravel a permis une gestion simplifiée du routage et de l'authentification. J'ai mis en place des Eloquent Relationships pour lier les agences aux véhicules disponibles.</p>
-                    <p><strong>Amélioration possible :</strong> Mise en cache des résultats de recherche pour optimiser les performances lors des pics de consultation.</p>
+                    <p>
+                        Le site repose sur une architecture <strong>LAMP</strong> (Linux, Apache, MySQL, PHP).
+                    </p>
+                    <p>
+                        La logique métier est séparée de l'affichage pour garantir un code plus propre. J'ai également mis en place une gestion de l'affichage dynamique des données en fonction des résultats stockés en base.
+                    </p>
+                    
+                    <p><strong>Amélioration possible :</strong> Intégrer une architecture de type <strong>MVC (Modèle-Vue-Contrôleur)</strong> pour mieux structurer le projet et faciliter l'évolution vers un framework comme Laravel par la suite.</p>
                 </div>
                 <div class="modal-gallery">
                     <img src="images/screen-ada-php.png" alt="Capture Site Ada">
@@ -431,14 +444,20 @@
     <div id="modalAdaC#" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modalAdaC#')">&times;</span>
-            <h2>Analyse : Application Ada (Entity)</h2>
+            <h2>Analyse : Application Bureau Ada (C# / Entity Framework)</h2>
             <div class="modal-grid">
                 <div class="modal-text">
                     <h3>Objectif</h3>
-                    <p>Développer un portail de réservation client robuste et sécurisé.</p>
+                    <p>Concevoir une application dédiée à la gestion interne des réservations, du parc automobile et de la facturation pour les agents en agence.</p>
                     <h3>Analyse Technique</h3>
-                    <p>L'utilisation de Laravel a permis une gestion simplifiée du routage et de l'authentification. J'ai mis en place des Eloquent Relationships pour lier les agences aux véhicules disponibles.</p>
-                    <p><strong>Amélioration possible :</strong> Mise en cache des résultats de recherche pour optimiser les performances lors des pics de consultation.</p>
+                    <p>
+                        L'utilisation de l'<strong>ORM Entity Framework</strong> a permis de faire le pont entre le modèle objet en C# et la base de données SQL Server. 
+                        Grâce aux requêtes <strong>LINQ</strong>, j'ai pu manipuler les données de manière sécurisée et typée, évitant ainsi les injections SQL.
+                    </p>
+                    <p>
+                        L'architecture respecte une séparation des couches, facilitant la maintenance corrective de l'application.
+                    </p>         
+                    <p><strong>Amélioration possible :</strong> Implémenter le pattern <i>Unit of Work</i> ou <i>Repository</i> pour isoler encore davantage la logique d'accès aux données et faciliter les tests unitaires.</p>
                 </div>
                 <div class="modal-gallery">
                     <img src="images/screen-ada-php.png" alt="Capture Site Ada">
@@ -450,13 +469,13 @@
     <div id="modalAdaPHP" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modalAdaPHP')">&times;</span>
-            <h2>Analyse : Site Web Ada (Laravel)</h2>
+            <h2>Analyse : Site Web Ada (PHP / Laravel Framework)</h2>
             <div class="modal-grid">
                 <div class="modal-text">
                     <h3>Objectif</h3>
-                    <p>Développer un portail de réservation client robuste et sécurisé.</p>
+                    <p>Développer un portail de réservation client robuste et sécurisé, ainsi qu'une prévisualisation des modèles disponibles et les informations des agences.</p>
                     <h3>Analyse Technique</h3>
-                    <p>L'utilisation de Laravel a permis une gestion simplifiée du routage et de l'authentification. J'ai mis en place des Eloquent Relationships pour lier les agences aux véhicules disponibles.</p>
+                    <p>L'utilisation du Framework Laravel a permis une gestion simplifiée du routage et de l'authentification. Nous avons développé un environnement complet autour d'une bdd préexistante.</p>
                     <p><strong>Amélioration possible :</strong> Mise en cache des résultats de recherche pour optimiser les performances lors des pics de consultation.</p>
                 </div>
                 <div class="modal-gallery">
