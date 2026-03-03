@@ -422,28 +422,73 @@ footer {
     margin-right: 5px;
 }
 
-/* ... Modales ...*/
-
+/* --- Style du bouton Détails (Accordé au site) --- */
 .btn-details {
-    background: var(--dark);
+    background-color: #1e293b; /* Bleu nuit pour le bouton */
     color: white;
     border: none;
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-weight: 600;
     transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .btn-details:hover {
-    background: var(--primary);
+    background-color: #2563eb; /* Devient bleu vif au survol */
+    transform: translateY(-2px);
 }
 
+/* --- Système de Modale (Pop-up) --- */
+.modal {
+    display: none; /* CACHÉ PAR DÉFAUT */
+    position: fixed;
+    z-index: 9999; /* Par-dessus tout le reste */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond noir transparent */
+    overflow-y: auto; /* Permet de scroller si le contenu est long */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 40px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1e293b;
+}
+
+.close:hover {
+    color: #2563eb;
+}
+
+/* Mise en page interne de la modale */
 .modal-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    gap: 20px;
+    gap: 30px;
     margin-top: 20px;
 }
 
-/* ... Style de la modale déjà fourni précédemment ... */
+.modal-text h3 {
+    color: #2563eb;
+    margin: 20px 0 10px 0;
+}
