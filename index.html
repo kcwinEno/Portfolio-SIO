@@ -353,50 +353,124 @@
     </section>
 
     <div id="modalStage1" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modalStage1')">&times;</span>
-            <h2>Entreprise : Berthoud Cycles</h2>
-            <div class="modal-grid">
-                <div class="modal-text">
-                    <h3>L'entreprise</h3>
-                    <p>Berthoud Cycles est une manufacture de cycles haut de gamme. Situé à Fleurville, 01190 en France.</p>
-                    <h3>Objectif(s)</h3>
-                    <p>Lors de mon arrivée, on m'a présenté les attentes de la société : je devais réalisé une nouvelle "home-page", ainsi que développer une solution à un module non-fonctionnel. </p>
-                    <h3>Analyse réflexive</h3>
-                    <p><strong>Réalisations :</strong> Simplification de la sélection et de la redirection des commandes PrestaShop via un module personnalisé.</p>
-                    <p><strong>Bilan :</strong> J'ai appris à manipuler les hooks PrestaShop, et j'ai découvert vaguement comment fonctionner un module. Avec plus de temps, j'aurais implémenté des tests unitaires automatiques sur mon code.</p>
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalStage1')">&times;</span>
+        
+        <div class="modal-header-pro">
+            <h2>Fiche Stage : Berthoud Cycles</h2>
+            <span class="badge-tech">Stage de 1ère année</span>
+        </div>
+
+        <div class="modal-body">
+            <section class="modal-section">
+                <h3>1. Présentation & Objectifs</h3>
+                <p><strong>Entreprise :</strong> Berthoud Cycles (Manufacture de cycles haut de gamme artisanale).</p>
+                <p><strong>Missions :</strong> Refonte visuelle de la "home-page" du site e-commerce et résolution de problèmes techniques sur des modules existants pour fluidifier le traitement des commandes.</p>
+            </section>
+
+            <section class="modal-section">
+                <h3>2. Environnement Technique</h3>
+                <div class="tech-icons-grid">
+                    <div class="tech-tag">🛒 PrestaShop (CMS)</div>
+                    <div class="tech-tag">🐘 PHP / Smarty</div>
+                    <div class="tech-tag">🎨 HTML5 / CSS3</div>
+                    <div class="tech-tag">🛠️ Git / FTP</div>
                 </div>
-                <div class="modal-gallery">
-                    <img src="images/screen-stage1-1.png" alt="Capture Stage 1">
+            </section>
+
+            <section class="modal-section">
+                <h3>3. Architecture du projet</h3>
+                <p>Système basé sur le CMS PrestaShop utilisant une architecture <strong>MVC</strong>. Interaction avec la base de données via l'ORM interne de PrestaShop et utilisation de <strong>Hooks</strong> pour greffer des fonctionnalités sur le front-end.</p>
+            </section>
+
+            <section class="modal-section">
+                <h3>4. Travaux effectués</h3>
+                <ul class="task-list">
+                    <li>✅ Analyse de l'existant et identification des bugs du module de commande.</li>
+                    <li>✅ Développement d'un module personnalisé pour simplifier la redirection des flux.</li>
+                    <li>✅ Intégration d'une nouvelle page d'accueil respectant l'identité visuelle de la marque.</li>
+                    <li>✅ Manipulation des hooks PrestaShop pour l'affichage dynamique de contenus.</li>
+                    <li>✅ Tests de non-régression sur le tunnel d'achat.</li>
+                </ul>
+            </section>
+
+            <section class="modal-section">
+                <h3>5. Bilan & Analyse réflexive</h3>
+                <div class="modal-grid-assets">
+                    <div class="asset-item">
+                        <p><strong>Analyse technique :</strong></p>
+                        <p>Ce stage m'a permis de comprendre le fonctionnement modulaire d'un CMS professionnel. J'ai appris à adapter mon code à une structure complexe préexistante.</p>
+                        <p><strong>Amélioration :</strong> Avec plus de recul, j'aurais mis en place des tests unitaires automatisés pour sécuriser les mises à jour du module.</p>
+                    </div>
+                    <div class="asset-item">
+                        <p><strong>Rendu visuel :</strong></p>
+                        <img src="images/screen-stage1-1.png" alt="Capture Stage 1" class="img-zoomable">
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
+</div>
 
     <div id="modalStage2" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modalStage2')">&times;</span>
-            <h2>Entreprise : Ether Création</h2>
-            <div class="modal-grid">
-                <div class="modal-text">
-                    <h3>L'entreprise</h3>
-                    <p>Ether Création est une société de développement informatique spécialisée sur PrestaShop et la création de modules. Situé à Bourg-en-Bresse, 01000 en France.</p>
-                    <h3>Objectif(s)</h3>
-                    <p>Apprendre à développer en méthode agile avec peu de connaissances, en disposant de ressources comme la documentation PHP ou l'Intelligence Artificielle.</p>
-                    <h3>Analyse réflexive</h3>
-                    <p><strong>Réalisations :</strong> Développement d'un connecteur (module) liant une API distante à un site de e-commerce sur PrestaShop.</p>
-                    <p><strong>Bilan :</strong> J'ai appris à manipuler les hooks PrestaShop et à manipuler les flux de données. Avec plus de temps, j'aurais implémenté la réception et l'envoie de bon de commandes.</p>
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalStage2')">&times;</span>
+        
+        <div class="modal-header-pro">
+            <h2>Fiche Stage : Ether Création</h2>
+            <span class="badge-tech">Stage de 2ème année</span>
+        </div>
+
+        <div class="modal-body">
+            <section class="modal-section">
+                <h3>1. Présentation & Objectifs</h3>
+                <p><strong>Entreprise :</strong> Ether Création (Agence web spécialisée PrestaShop).</p>
+                <p><strong>Missions :</strong> Développer en autonomie un connecteur complexe liant une API tierce au catalogue e-commerce. L'objectif était d'automatiser la synchronisation des données produits.</p>
+            </section>
+
+            <section class="modal-section">
+                <h3>2. Environnement Technique</h3>
+                <div class="tech-icons-grid">
+                    <div class="tech-tag">🚀 Méthode Agile</div>
+                    <div class="tech-tag">🔌 API REST / JSON</div>
+                    <div class="tech-tag">🐘 PHP Avancé</div>
+                    <div class="tech-tag">🤖 IA (Aide au dev)</div>
                 </div>
-                <div class="modal-gallery">
-                    <img src="images/screen-stage1-1.png" alt="Capture Stage 1">
+            </section>
+
+            <section class="modal-section">
+                <h3>3. Architecture du projet</h3>
+                <p>Mise en place d'une architecture de <strong>connecteur</strong> : consommation d'une API distante (requêtes cURL/Guzzle), traitement des données JSON et mise à jour de la base de données SQL via les WebServices de PrestaShop.</p>
+            </section>
+
+            <section class="modal-section">
+                <h3>4. Travaux effectués</h3>
+                <ul class="task-list">
+                    <li>✅ Étude de la documentation technique de l'API distante.</li>
+                    <li>✅ Création d'un module de configuration pour les clés d'API.</li>
+                    <li>✅ Développement du moteur de synchronisation (Flux de données).</li>
+                    <li>✅ Gestion des erreurs de connexion et logs de transfert.</li>
+                    <li>✅ Utilisation de l'IA pour optimiser certains algorithmes de tri.</li>
+                </ul>
+            </section>
+
+            <section class="modal-section">
+                <h3>5. Bilan & Analyse réflexive</h3>
+                <div class="modal-grid-assets">
+                    <div class="asset-item">
+                        <p><strong>Analyse technique :</strong></p>
+                        <p>Une immersion totale dans le développement professionnel. J'ai renforcé ma capacité à monter en compétence rapidement sur des technologies inconnues (API).</p>
+                        <p><strong>Amélioration :</strong> L'ajout d'une fonctionnalité d'envoi automatique des bons de commande vers l'API aurait été un vrai plus pour l'automatisation totale.</p>
+                    </div>
+                    <div class="asset-item">
+                        <p><strong>Rendu visuel :</strong></p>
+                        <img src="images/screen-stage2-1.png" alt="Capture Stage 2" class="img-zoomable">
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
-
-   Voici les trois modaux (Ada C#, Ada PHP et Ligue 1 C#) restructurés selon le nouveau format professionnel. J'ai complété les sections manquantes (Contexte, Architecture, Travaux effectués) pour qu'ils soient prêts pour ton épreuve.
-1. Modal : Application Ada (C# / Entity Framework)
-HTML
+</div>
 
 <div id="modalAdaC#" class="modal">
     <div class="modal-content">
