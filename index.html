@@ -394,98 +394,367 @@
         </div>
     </div>
 
-    <div id="modalLigue1C#" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modalLigue1C#')">&times;</span>
-            <h2>Analyse : Application Bureau Ligue1 (C#) </h2>
-            <div class="modal-grid">
-                <div class="modal-text">
-                    <h3>Objectif</h3>
-                    <p>Développer un logiciel de bureau permettant à un administrateur de gérer le calendrier, de saisir les scores des matchs et de générer automatiquement le classement du championnat.</p>
-                    <h3>Analyse Technique</h3>
-                    <p>
-                        Ce projet m'a permis de mettre en pratique les concepts de la <strong>Programmation Orientée Objet (POO)</strong> en C#
-                    </p>
-                    <p>
-                        L'interface utilisateur a été conçue pour être intuitive, avec une gestion d'événements permettant de mettre à jour le classement en temps réel dès la validation d'un score. Les données sont persistées via une base de données locale SQL Server.
-                    </p>
-                    <p><strong>Amélioration possible :</strong> Intégrer un système d'import/export de données au format JSON ou XML pour faciliter les échanges avec d'autres systèmes ou le site web PHP.</p>
+   Voici les trois modaux (Ada C#, Ada PHP et Ligue 1 C#) restructurés selon le nouveau format professionnel. J'ai complété les sections manquantes (Contexte, Architecture, Travaux effectués) pour qu'ils soient prêts pour ton épreuve.
+1. Modal : Application Ada (C# / Entity Framework)
+HTML
+
+<div id="modalAdaC#" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalAdaC#')">&times;</span>
+        
+        <div class="modal-header-pro">
+            <h2>Fiche Projet : Application Bureau Ada (C#)</h2>
+            <span class="badge-tech">Contexte Scolaire / E5</span>
+        </div>
+
+        <div class="modal-body">
+            <section class="modal-section">
+                <h3>1. Contexte & Objectifs</h3>
+                <p><strong>Entreprise :</strong> Ada (Société de location de véhicules).</p>
+                <p>Concevoir une application Desktop dédiée à la gestion interne : administration du parc automobile, suivi des réservations et automatisation de la facturation pour les agents en agence.</p>
+            </section>
+
+            <section class="modal-section">
+                <h3>2. Technologies utilisées</h3>
+                <div class="tech-icons-grid">
+                    <div class="tech-tag">🔷 C# / .NET</div>
+                    <div class="tech-tag">🔗 Entity Framework (ORM)</div>
+                    <div class="tech-tag">🗄️ SQL Server</div>
+                    <div class="tech-tag">📊 LINQ</div>
                 </div>
-                <div class="modal-gallery">
-                    <img src="images/screen-ada-php.png" alt="Capture Site Ada">
+            </section>
+
+            <section class="modal-section">
+                <h3>3. Architecture du projet</h3>
+                <p>Architecture <strong>Client-Serveur</strong>. Application lourde Windows communiquant avec une base de données centralisée via un ORM pour assurer la persistance des données.</p>
+                
+            </section>
+
+            <section class="modal-section">
+                <h3>4. Travaux effectués</h3>
+                <ul class="task-list">
+                    <li>✅ Modélisation de la base de données.</li>
+                    <li>✅ Mapping objet-relationnel avec Entity Framework.</li>
+                    <li>✅ </li>
+                    <li>✅ </li>
+                    <li>✅ .</li>
+                </ul>
+            </section>
+
+            <section class="modal-section">
+                <h3>5. Base de données & Interface</h3>
+                <div class="modal-grid-assets">
+                    <div class="asset-item">
+                        <p><strong>Diagramme de classes :</strong></p>
+                        <img src="images/bdd-ada.png" alt="Schéma BDD Ada" class="img-zoomable">
+                    </div>
+                    <div class="asset-item">
+                        <p><strong>Capture écran :</strong></p>
+                        <img src="images/screen-ada-cs.png" alt="Interface Ada C#" class="img-zoomable">
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
+</div>
+
+2. Modal : Site Web Ada (PHP / Laravel)
+HTML
+
+<div id="modalAdaPHP" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalAdaPHP')">&times;</span>
+        
+        <div class="modal-header-pro">
+            <h2>Fiche Projet : Portail Web Ada (Laravel)</h2>
+            <span class="badge-tech">Contexte Scolaire / E5</span>
+        </div>
+
+        <div class="modal-body">
+            <section class="modal-section">
+                <h3>1. Contexte & Objectifs</h3>
+                <p><strong>Entreprise :</strong> Ada (Société de location de véhicules).</p>
+                <p>Développer un portail client permettant la réservation en ligne, la prévisualisation des modèles de véhicules par catégorie et la géolocalisation des agences de location.</p>
+            </section>
+
+            <section class="modal-section">
+                <h3>2. Technologies utilisées</h3>
+                <div class="tech-icons-grid">
+                    <div class="tech-tag">🚩 Laravel Framework</div>
+                    <div class="tech-tag">🐘 PHP / Eloquent</div>
+                    <div class="tech-tag">🎨 Blade Engine</div>
+                    <div class="tech-tag">🗳️ Composer</div>
+                </div>
+            </section>
+
+            <section class="modal-section">
+                <h3>3. Architecture du projet</h3>
+                <p>Architecture <strong>MVC (Modèle-Vue-Contrôleur)</strong>. Utilisation du moteur de template Blade pour le front-end et de l'ORM Eloquent pour la gestion fluide de la base de données.</p>
+                
+            </section>
+
+            <section class="modal-section">
+                <h3>4. Travaux effectués</h3>
+                <ul class="task-list">
+                    <li>✅ Configuration du routage et des contrôleurs Laravel.</li>
+                    <li>✅ Intégration d'une base de données préexistante via les migrations.</li>
+                    <li>✅ Création de vues dynamiques pour l'affichage du catalogue.</li>
+                    <li>✅ </li>
+                </ul>
+            </section>
+
+            <section class="modal-section">
+                <h3>5. Base de données & Interface</h3>
+                <div class="modal-grid-assets">
+                    <div class="asset-item">
+                        <p><strong>Schéma Relationnel :</strong></p>
+                        <img src="images/bdd-ada-web.png" alt="BDD Ada Web" class="img-zoomable">
+                    </div>
+                    <div class="asset-item">
+                        <p><strong>Capture écran :</strong></p>
+                        <img src="images/screen-ada-php.png" alt="Interface Ada Web" class="img-zoomable">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<div id="modalLigue1C#" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalLigue1C#')">&times;</span>
+
+        <div class="modal-header-pro">
+            <h2>Fiche Projet : Gestion Ligue 1 (C#)</h2>
+            <span class="badge-tech">Contexte Scolaire</span>
+        </div>
+            
+        <div class="modal-body">
+            <section class="modal-section">
+                <h3>1. Contexte & Objectifs</h3>
+                <p><strong>Sujet :</strong> Fédération de football (LFP).</p>
+                <p>Développer un logiciel de bureau permettant à un administrateur de piloter le championnat : gestion du calendrier, saisie sécurisée des scores et calcul automatisé du classement général.</p>
+            </section>
+
+            <section class="modal-section">
+                <h3>2. Technologies utilisées</h3>
+                <div class="tech-icons-grid">
+                    <div class="tech-tag">🔷 C# / .NET WinForms</div>
+                    <div class="tech-tag">📦 POO (Classes métiers)</div>
+                    <div class="tech-tag">🗄️ SQL Server</div>
+                    <div class="tech-tag">🛠️ Visual Studio</div>
+                </div>
+            </section>
+
+            <section class="modal-section">
+                <h3>3. Architecture du projet</h3>
+                <p>Architecture <strong>n-tiers</strong>. Séparation stricte entre l'interface utilisateur (Vues), la logique métier (Classes) et l'accès aux données (DAL).</p>
+            </section>
+
+            <section class="modal-section">
+                <h3>4. Travaux effectués</h3>
+                <ul class="task-list">
+                    <li>✅ </li>
+                    <li>✅ </li>
+                    <li>✅ Implémentation du tri complexe pour le classement (Différence de buts).</li>
+                    <li>✅ </li>
+                    <li>✅ </li>
+                </ul>
+            </section>
+
+            <section class="modal-section">
+                <h3>5. Base de données & Interface</h3>
+                <div class="modal-grid-assets">
+                    <div class="asset-item">
+                        <p><strong>Diagramme de classes :</strong></p>
+                        <img src="images/class-diag-lfp.png" alt="Diag Classes Ligue 1" class="img-zoomable">
+                    </div>
+                    <div class="asset-item">
+                        <p><strong>Interface Saisie :</strong></p>
+                        <img src="images/screen-ligue1-cs.png" alt="Interface Ligue 1 C#" class="img-zoomable">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
 
     <div id="modalLigue1PHP" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modalLigue1PHP')">&times;</span>
-            <h2>Analyse : Site Web Ligue1 (PHP) </h2>
-            <div class="modal-grid">
-                <div class="modal-text">
-                    <h3>Objectif</h3>
-                    <p>Développer une plateforme web dynamique permettant aux utilisateurs de consulter les résultats, les classements et les statistiques du championnat en temps réel.</p>
-                    <h3>Analyse Technique</h3>
-                    <p>
-                        Le site repose sur une architecture <strong>LAMP</strong> (Linux, Apache, MySQL, PHP).
-                    </p>
-                    <p>
-                        La logique métier est séparée de l'affichage pour garantir un code plus propre. J'ai également mis en place une gestion de l'affichage dynamique des données en fonction des résultats stockés en base.
-                    </p>
-                    
-                    <p><strong>Amélioration possible :</strong> Intégrer une architecture de type <strong>MVC (Modèle-Vue-Contrôleur)</strong> pour mieux structurer le projet et faciliter l'évolution vers un framework comme Laravel par la suite.</p>
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalLigue1PHP')">&times;</span>
+        
+        <div class="modal-header-pro">
+            <h2>Fiche Projet : Site Web Ligue 1 (PHP)</h2>
+            <span class="badge-tech">Contexte Scolaire</span>
+        </div>
+
+        <div class="modal-body">
+            <section class="modal-section">
+                <h3>1. Contexte & Objectifs</h3>
+                <p><strong>Entreprise :</strong> LFP.</p>
+                <p>Ce projet consiste à développer une plateforme web dynamique destinée aux passionnés de football pour consulter les résultats, les classements et les statistiques de la Ligue 1 en temps réel, améliorant ainsi l'accessibilité aux données sportives.</p>
+            </section>
+
+            <section class="modal-section">
+                <h3>2. Technologies utilisées</h3>
+                <div class="tech-icons-grid">
+                    <div class="tech-tag">🌐 HTML/CSS</div>
+                    <div class="tech-tag">🐘 PHP (PDO)</div>
+                    <div class="tech-tag">🗄️ MySQL</div>
+                    <div class="tech-tag">🛠️ VS Code / WAMP</div>
                 </div>
-                <div class="modal-gallery">
-                    <img src="images/screen-ada-php.png" alt="Capture Site Ada">
+            </section>
+
+            <section class="modal-section">
+                <h3>3. Architecture du projet</h3>
+                <p>Architecture <strong>LAMP</strong> : Un client (navigateur) interroge un serveur web Apache qui exécute les scripts PHP. Les données sont persistées dans une base de données MySQL.</p>
+                
+            </section>
+
+            <section class="modal-section">
+                <h3>4. Travaux effectués</h3>
+                <ul class="task-list">
+                    <li>✅ Conception du schéma relationnel de la base de données.</li>
+                    <li>✅ Création des scripts de connexion sécurisés via PDO.</li>
+                    <li>✅ Développement des algorithmes de calcul automatique du classement.</li>
+                    <li>✅ Mise en place d'un système de filtres par journée de championnat.</li>
+                    <li>✅ </li>
+                </ul>
+            </section>
+
+            <section class="modal-section">
+                <h3>5. Base de données & Interface</h3>
+                <div class="modal-grid-assets">
+                    <div class="asset-item">
+                        <p><strong>Schéma BDD :</strong></p>
+                        <img src="images/bdd-ligue1.png" alt="Diagramme de classe Ligue 1" class="img-zoomable">
+                    </div>
+                    <div class="asset-item">
+                        <p><strong>Capture écran :</strong></p>
+                        <img src="images/ligue1PHP.png" alt="Maquette Ligue 1" class="img-zoomable">
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
+</div>
 
-    <div id="modalAdaC#" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modalAdaC#')">&times;</span>
-            <h2>Analyse : Application Bureau Ada (C# / Entity Framework)</h2>
-            <div class="modal-grid">
-                <div class="modal-text">
-                    <h3>Objectif</h3>
-                    <p>Concevoir une application dédiée à la gestion interne des réservations, du parc automobile et de la facturation pour les agents en agence.</p>
-                    <h3>Analyse Technique</h3>
-                    <p>
-                        L'utilisation de l'<strong>ORM Entity Framework</strong> a permis de faire le pont entre le modèle objet en C# et la base de données SQL Server. 
-                        Grâce aux requêtes <strong>LINQ</strong>, j'ai pu manipuler les données de manière sécurisée et typée, évitant ainsi les injections SQL.
-                    </p>
-                    <p>
-                        L'architecture respecte une séparation des couches, facilitant la maintenance corrective de l'application.
-                    </p>         
-                    <p><strong>Amélioration possible :</strong> Implémenter le pattern <i>Unit of Work</i> ou <i>Repository</i> pour isoler encore davantage la logique d'accès aux données et faciliter les tests unitaires.</p>
+   <div id="modalAdaC#" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalAdaC#')">&times;</span>
+        
+        <div class="modal-header-pro">
+            <h2>Fiche Projet : Application Bureau Ada (C#)</h2>
+            <span class="badge-tech">Contexte Scolaire / E5</span>
+        </div>
+
+        <div class="modal-body">
+            <section class="modal-section">
+                <h3>1. Contexte & Objectifs</h3>
+                <p><strong>Entreprise :</strong> Ada (Société de location de véhicules).</p>
+                <p>Concevoir une application Desktop dédiée à la gestion interne : administration du parc automobile, suivi des réservations et automatisation de la facturation pour les agents en agence.</p>
+            </section>
+
+            <section class="modal-section">
+                <h3>2. Technologies utilisées</h3>
+                <div class="tech-icons-grid">
+                    <div class="tech-tag">🔷 C# / .NET</div>
+                    <div class="tech-tag">🔗 Entity Framework (ORM)</div>
+                    <div class="tech-tag">🗄️ SQL Server</div>
+                    <div class="tech-tag">📊 LINQ</div>
                 </div>
-                <div class="modal-gallery">
-                    <img src="images/screen-ada-php.png" alt="Capture Site Ada">
+            </section>
+
+            <section class="modal-section">
+                <h3>3. Architecture du projet</h3>
+                <p>Architecture <strong>Client-Serveur</strong>. Application lourde Windows communiquant avec une base de données centralisée via un ORM pour assurer la persistance des données.</p>
+                
+            </section>
+
+            <section class="modal-section">
+                <h3>4. Travaux effectués</h3>
+                <ul class="task-list">
+                    <li>✅ </li>
+                    <li>✅ Mapping objet-relationnel avec Entity Framework.</li>
+                    <li>✅ Développement de l'interface de gestion des véhicules (CRUD).</li>
+                    <li>✅ Implémentation de requêtes LINQ pour les statistiques de location.</li>
+                    <li>✅ Gestion des exceptions et validation des saisies utilisateurs.</li>
+                </ul>
+            </section>
+
+            <section class="modal-section">
+                <h3>5. Base de données & Interface</h3>
+                <div class="modal-grid-assets">
+                    <div class="asset-item">
+                        <p><strong>Diagramme de classes :</strong></p>
+                        <img src="images/bdd-ada.png" alt="Schéma BDD Ada" class="img-zoomable">
+                    </div>
+                    <div class="asset-item">
+                        <p><strong>Capture écran :</strong></p>
+                        <img src="images/screen-ada-cs.png" alt="Interface Ada C#" class="img-zoomable">
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
-
+</div>
     <div id="modalAdaPHP" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modalAdaPHP')">&times;</span>
-            <h2>Analyse : Site Web Ada (PHP / Laravel Framework)</h2>
-            <div class="modal-grid">
-                <div class="modal-text">
-                    <h3>Objectif</h3>
-                    <p>Développer un portail de réservation client robuste et sécurisé, ainsi qu'une prévisualisation des modèles disponibles et les informations des agences.</p>
-                    <h3>Analyse Technique</h3>
-                    <p>L'utilisation du Framework Laravel a permis une gestion simplifiée du routage et de l'authentification. Nous avons développé un environnement complet autour d'une bdd préexistante.</p>
-                    <p><strong>Amélioration possible :</strong> Mise en cache des résultats de recherche pour optimiser les performances lors des pics de consultation.</p>
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalAdaPHP')">&times;</span>
+        
+        <div class="modal-header-pro">
+            <h2>Fiche Projet : Portail Web Ada (Laravel)</h2>
+            <span class="badge-tech">Contexte Scolaire / E5</span>
+        </div>
+
+        <div class="modal-body">
+            <section class="modal-section">
+                <h3>1. Contexte & Objectifs</h3>
+                <p><strong>Entreprise :</strong> Ada (Société de location de véhicules).</p>
+                <p>Développer un portail client permettant la réservation en ligne, la prévisualisation des modèles de véhicules par catégorie et la géolocalisation des agences de location.</p>
+            </section>
+
+            <section class="modal-section">
+                <h3>2. Technologies utilisées</h3>
+                <div class="tech-icons-grid">
+                    <div class="tech-tag">🚩 Laravel Framework</div>
+                    <div class="tech-tag">🐘 PHP</div>
                 </div>
-                <div class="modal-gallery">
-                    <img src="images/screen-ada-php.png" alt="Capture Site Ada">
+            </section>
+
+            <section class="modal-section">
+                <h3>3. Architecture du projet</h3>
+                <p>Architecture <strong>MVC (Modèle-Vue-Contrôleur)</strong>. Utilisation du moteur de template Blade pour le front-end et de l'ORM Eloquent pour la gestion fluide de la base de données.</p>
+                
+            </section>
+
+            <section class="modal-section">
+                <h3>4. Travaux effectués</h3>
+                <ul class="task-list">
+                    <li>✅ Configuration du routage et des contrôleurs Laravel.</li>
+                    <li>✅ Développement du système d'authentification sécurisé.</li>
+                    <li>✅ Intégration d'une base de données préexistante via les migrations.</li>
+                    <li>✅ Création de vues dynamiques pour l'affichage du catalogue.</li>
+                    <li>✅ Mise en place de formulaires de réservation avec validation CSRF.</li>
+                </ul>
+            </section>
+
+            <section class="modal-section">
+                <h3>5. Base de données & Interface</h3>
+                <div class="modal-grid-assets">
+                    <div class="asset-item">
+                        <p><strong>Schéma Relationnel :</strong></p>
+                        <img src="images/bdd-ada-web.png" alt="BDD Ada Web" class="img-zoomable">
+                    </div>
+                    <div class="asset-item">
+                        <p><strong>Capture écran :</strong></p>
+                        <img src="images/screen-ada-php.png" alt="Interface Ada Web" class="img-zoomable">
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
+</div>
 
     <footer id="contact">
         <div class="footer-content">
