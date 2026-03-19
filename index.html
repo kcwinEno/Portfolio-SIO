@@ -222,75 +222,67 @@
 
 
     <section id="certifications" class="container">
-        <h2>Certifications</h2>
-        <div class="grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/anssi.png" alt="Certification ANSSI">
-                </div>
-                <div class="project-info">
-                    <h3>SecNumAcadémie</h3>
-                    <p>Formation certifiante de l'ANSSI sur la sécurité du numérique.</p>
-                    <div class="tech-stack">ANSSI / Cybersécurité</div>
-                    <div class="project-links">
-                        <a href="documents/SecnumAttestation.pdf" target="_blank" class="btn-download">📜 Voir le certificat</a>
-                    </div>
-                </div>
+    <h2>Certifications</h2>
+    <div class="grid">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/anssi.png" alt="Certification ANSSI">
             </div>
-            
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/pixlogo.png" alt="Certification ANSSI">
+            <div class="project-info">
+                <h3>SecNumAcadémie</h3>
+                <p>Formation certifiante de l'ANSSI sur la sécurité du numérique.</p>
+                <div class="tech-stack">ANSSI / Cybersécurité</div>
+                <div class="project-links">
+                    <a href="documents/SecnumAttestation.pdf" target="_blank" class="btn-download">📜 Voir le certificat</a>
                 </div>
-                <div class="project-info">
-                    <h3>PIX</h3>
-                    <p>Certification PIX obtenue.</p>
-                    <div class="tech-stack">PIX</div>
-                    <div class="project-links">
-                        <a href="documents/certifPIX.pdf" target="_blank" class="btn-download">📜 Voir le certificat</a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/cnil.png" alt="Certifications CNIL">
-                </div>
-                <div class="project-info">
-                    <h3>Ateliers RGPD - Module 1</h3>
-                    <p>Certifications sur la protection des données personnelles.</p>
-                    <div class="tech-stack">CNIL / RGPD</div>
-                    <div class="project-links">
-                        <a href="documents/Certificat_1.pdf" target="_blank" class="btn-download">📜 Voir le certificat</a>
-                    </div>
-                </div>
-                
-                <div id="more-certifs" style="display: none;">
-                    <h3>Ateliers RGPD - Module 2</h3>
-                    <p>Certifications sur la protection des données personnelles.</p>
-                    <div class="tech-stack">CNIL / RGPD</div>
-                    <div class="project-links">
-                        <a href="documents/Certificat_2.pdf" target="_blank" class="btn-download">📜 Voir le certificat</a>
-                    </div>
-                    <h3>Ateliers RGPD - Module 3</h3>
-                    <p>Certifications sur la protection des données personnelles.</p>
-                    <div class="tech-stack">CNIL / RGPD</div>
-                    <div class="project-links">
-                        <a href="documents/Certificat_3.pdf" target="_blank" class="btn-download">📜 Voir le certificat</a>
-                    </div>
-                    <h3>Ateliers RGPD - Module 4</h3>
-                    <p>Certifications sur la protection des données personnelles.</p>
-                    <div class="tech-stack">CNIL / RGPD</div>
-                    <div class="project-links">
-                        <a href="documents/Certificat_4.pdf" target="_blank" class="btn-download">📜 Voir le certificat</a>
-                    </div>
-                </div>
-            </div>
-            <div style="text-align: center; padding-bottom: 20px;">
-                <button onclick="toggleContent('more-certifs', this)" class="btn-show-more">👇 Afficher tout</button>
             </div>
         </div>
-    </section>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/pix.png" alt="Certification PIX">
+            </div>
+            <div class="project-info">
+                <h3>PIX</h3>
+                <p>Certification PIX obtenue.</p>
+                <div class="tech-stack">PIX</div>
+                <div class="project-links">
+                    <a href="documents/certifPIX.pdf" target="_blank" class="btn-download">📜 Voir le certificat</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/cnil.png" alt="Certifications CNIL">
+            </div>
+            <div class="project-info">
+                <h3>Ateliers RGPD - Module 1</h3>
+                <p>Certifications sur la protection des données personnelles.</p>
+                <div class="tech-stack">CNIL / RGPD</div>
+                <div class="project-links">
+                    <a href="documents/Certificat_1.pdf" target="_blank" class="btn-download">📜 Voir le certificat</a>
+                    
+                    <button onclick="toggleContent('more-certifs', this)" class="btn-show-more">➕ Lire la suite</button>
+                </div>
+            </div>
+
+            <div id="more-certifs" style="display: none; padding: 10px 20px;">
+                <hr style="opacity: 0.2; margin: 10px 0;">
+                <div class="project-info" style="padding: 0;">
+                    <h3>Modules 2, 3 et 4</h3>
+                    <p>Protection des données et conformité RGPD.</p>
+                    <div class="project-links" style="display: flex; flex-direction: column; gap: 10px;">
+                        <a href="documents/Certificat_2.pdf" target="_blank" class="btn-download">📜 Module 2</a>
+                        <a href="documents/Certificat_3.pdf" target="_blank" class="btn-download">📜 Module 3</a>
+                        <a href="documents/Certificat_4.pdf" target="_blank" class="btn-download">📜 Module 4</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
     <section id="veille" class="container">
     <h2>Veille Technologique</h2>
     
