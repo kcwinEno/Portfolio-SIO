@@ -48,4 +48,16 @@ backToTopButton.onclick = function() {
     });
 };
 
+function toggleContent(id, btn) {
+    const content = document.getElementById(id);
+    
+    if (content.style.display === "none") {
+        content.style.display = "block";
+        btn.innerHTML = "👆 Réduire";
+    } else {
+        content.style.display = "none";
+        btn.innerHTML = btn.id === "more-certifs" ? "👇 Afficher tout" : "➕ Lire la suite";
+    }
+}
+
 console.log("Portfolio chargé avec succès - Candidat BTS SIO prêt !");
