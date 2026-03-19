@@ -613,3 +613,20 @@ footer {
     background-color: var(--dark);
     transform: scale(1.1);
 }
+
+.btn-show-more {
+    background: transparent;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn-show-more:hover {
+    background: #2563eb;
+    color: white;
+}
