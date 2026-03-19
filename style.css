@@ -615,18 +615,27 @@ footer {
 }
 
 .btn-show-more {
-    background: transparent;
+    background-color: transparent;
     border: 1px solid #2563eb;
     color: #2563eb;
-    padding: 8px 16px;
+    padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
     font-weight: 600;
-    margin-top: 15px;
+    font-size: 0.85rem;
     transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .btn-show-more:hover {
-    background: #2563eb;
+    background-color: #2563eb;
     color: white;
+}
+
+/* Optionnel : pour que les boutons dans le bloc caché soient bien rangés */
+#more-certifs .btn-download {
+    width: 100%;
+    text-align: center;
 }
