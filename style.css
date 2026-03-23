@@ -639,3 +639,23 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+.btn-live {
+    background-color: #10b981; /* Un vert émeraude élégant */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-live:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
