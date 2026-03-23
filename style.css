@@ -661,3 +661,14 @@ footer {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
 }
+
+.project-links {
+    display: flex; /* Assure-toi que le parent est bien en flex */
+    align-items: center;
+    gap: 10px; /* Espace entre les deux premiers boutons */
+    width: 100%; /* Important pour que le flex prenne toute la largeur */
+}
+
+.btn-right {
+    margin-left: auto; /* Pousse le bouton vers la droite */
+}
