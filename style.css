@@ -714,3 +714,11 @@ footer {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+.img-zoomable {
+    cursor: zoom-in;
+    transition: 0.3s;
+}
+.img-zoomable:hover {
+    opacity: 0.8;
+}
