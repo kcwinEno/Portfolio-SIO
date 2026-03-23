@@ -652,6 +652,8 @@ footer {
     gap: 8px;
     transition: 0.3s;
     border: none;
+    margin: 0 auto;
+    margin-right: 10px;
 }
 
 .btn-live:hover {
