@@ -60,4 +60,15 @@ function toggleContent(id, btn) {
     }
 }
 
+function openLightbox(src) {
+    document.getElementById("imgFull").src = src;
+    document.getElementById("imageLightbox").style.display = "block";
+    document.body.style.overflow = "hidden"; // Bloque le scroll derrière
+}
+
+function closeLightbox() {
+    document.getElementById("imageLightbox").style.display = "none";
+    document.body.style.overflow = "auto"; // Rend le scroll
+}
+
 console.log("Portfolio chargé avec succès - Candidat BTS SIO prêt !");
